@@ -129,7 +129,7 @@ public class BookService {
                 });
 
         // Step 2: Assign the author to the book
-        book.setAuthored_by(author);
+        book.setAuthoredBy(author);
 
         // Step 3: Save the updated book (and relationship) in the database
         bookEntity savedBook = bookRepository.save(book);

@@ -21,7 +21,7 @@ public class AuthorEntity {
 
     private String name;
 
-    @OneToMany(mappedBy = "authored_by",cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "authoredBy",cascade = CascadeType.ALL)
     private List<bookEntity> bookEntityList;
 
 }
