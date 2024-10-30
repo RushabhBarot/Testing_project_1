@@ -110,7 +110,6 @@ public class BookService {
         return books.stream().map((element) ->
                 modelMapper.map(element, BookDTO.class))
                 .collect(Collectors.toList());
-
     }
 
     public BookDTO assignAuthorToBook(Long bookId, Long authorId) {
