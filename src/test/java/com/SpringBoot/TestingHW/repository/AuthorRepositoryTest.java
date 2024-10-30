@@ -57,7 +57,7 @@ class AuthorRepositoryTest {
         assertThat(authorEntityList).isNotNull();
         assertThat(authorEntityList).hasSize(1);
         assertThat(authorEntityList).isNotEmpty();
-        assertThat(authorEntityList.get(0).getName().equals("JOHN DOE"));
+        assertThat(authorEntityList.get(0).getName()).isEqualTo("JOHN DOE");
     }
 
     @Test
